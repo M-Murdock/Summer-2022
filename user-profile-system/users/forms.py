@@ -88,4 +88,3 @@ class UpdateProfileForm(forms.ModelForm):
     class Meta:
         model = Profile
         fields = ['avatar', 'bio', 'institution','year']
-#         fields = ['avatar', 'bio']

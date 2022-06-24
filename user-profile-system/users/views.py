@@ -95,3 +95,14 @@ def profile(request):
         profile_form = UpdateProfileForm(instance=request.user.profile)
 
     return render(request, 'users/profile.html', {'user_form': user_form, 'profile_form': profile_form})
+
+@login_required
+def progress(request):
+    return render(request, 'users/progress.html')
+
+def greet(name):
+    return "Hello " + name + "!!"
+
+@login_required
+def exercises(request): 
+    return render(request, 'users/exercises.html')
