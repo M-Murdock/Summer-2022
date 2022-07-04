@@ -11,6 +11,9 @@
 `MultipleChoice.ipynb` is an experimentation with a couple of things: 
 1. Using [Stanza](https://stanfordnlp.github.io/stanza/index.html) to create multiple-choice questions about the structure of a given sentence. Just as with `HomericaQuizzes.ipynb`, questions are drawn from `lib/quiz_questions.txt`. 
 2. Generating a list of words with possible and impossible accents. The user is then asked to identify the words with impossible accents. This utilizes modules from [greek-accentuation](https://github.com/jtauber/greek-accentuation).
+3. Using [greek-accentuation](https://github.com/jtauber/greek-accentuation) to break a word into syllables, ask the user to identify the antepenult, penult, or ultima of the word
+4. Drill accent rules by asking the user to identify possible legal locations of a given accent
+5. A single word is randomly chosen, along with several possible and impossible accentuations of that word. The user is then asked to identify all the possible accentuations.
 
 ---
 
