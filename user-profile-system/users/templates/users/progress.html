@@ -1,0 +1,10 @@
+{% extends "users/base.html" %}
+{% block title %}Progress Page{% endblock title %}
+{% block content %}
+    <div class="jumbotron">
+        <h1 class="display-4">Progress Report for {{user.first_name.title|default:'Guest'}}</h1>
+        <p class="lead">
+            Your progress will be displayed here...
+        </p>
+    </div>
+{% endblock content %}
