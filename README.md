@@ -15,6 +15,8 @@
 4. Drill accent rules by asking the user to identify possible legal locations of a given accent
 5. A single word is randomly chosen, along with several possible and impossible accentuations of that word. The user is then asked to identify all the possible accentuations.
 
+`StanzaExercises` is an experimentation with using Stanza to create exercises and give specific feedback
+
 ---
 
 ### user-profile-system/
