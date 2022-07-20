@@ -23,6 +23,8 @@
 
 `StanzaUgarit` imports greek sentences from each chapter of Crosby-Shaeffer (as well as their english translations), then treebanks them (using CoNLL-U format).
 
+`GetTranslationExercises` reads through the Crosby-Shaeffer xml file and extracts all of the translation exercises, putting them into a csv file
+
 ---
 
 ### user-profile-system/
@@ -43,3 +45,8 @@
 
 `verbs.tsv` and `paradigms.tsv` are [lists of forms](https://github.com/jtauber/greek-inflexion/tree/master/homer-data) from Pharr's Homeric Greek
 
+---
+
+### lib/Crosby-Shaeffer-Lessons/
+
+`CrosbyShaefferLesson*.csv` contains the exercises from each Crosby-Shaeffer lesson (where * is the lesson number)
