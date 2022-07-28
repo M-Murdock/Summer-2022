@@ -7,7 +7,7 @@ from django.views import View
 from django.contrib.auth.decorators import login_required
 
 from .forms import RegisterForm, LoginForm, UpdateUserForm, UpdateProfileForm
-
+from .exercises import Progress
 
 def home(request):
     return render(request, 'users/home.html')
@@ -98,7 +98,7 @@ def profile(request):
 
 @login_required
 def progress(request):
-    return render(request, 'users/progress.html')
+    return render(request, 'users/progress.html', {'progress': Progress.test_var})
 
 def greet(name):
     return "Hello " + name + "!!"

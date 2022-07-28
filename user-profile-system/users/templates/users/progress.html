@@ -5,6 +5,8 @@
         <h1 class="display-4">Progress Report for {{user.first_name.title|default:'Guest'}}</h1>
         <p class="lead">
             Your progress will be displayed here...
+            <br>
+            {{progress|default:'Login to view your progress'}}
         </p>
     </div>
 {% endblock content %}
