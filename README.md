@@ -2,6 +2,17 @@
 
 ---
 
+## Next Steps
+
+- [Voila](https://voila.readthedocs.io/en/stable/index.html) is a good option for turning jupyter notebooks into interactive dashboards. Gradio exercises seem to appear on the dashboard perfectly well, and if we save the output to a file (as in `./SaveToFile`), then it should be fairly straightforward to keep students' progress saved. 
+
+- the [`greek-inflexion`](https://github.com/jtauber/greek-inflexion) library appears to have support for declining nouns. `./lib/greek-inflexion-files/crosby_schaeffer_10_nouns_adj.txt` contains all the nouns and adjectives from the first 10 chapters of Crosby and Schaeffer. It should be possible to use this file to generate all the forms of the words, just as we're doing for verbs. 
+
+---
+
+## Files
+
+
 ### /
 
 `GreekExercises.ipynb` contains some rough preliminary code for checking English -> Greek translations. As of right now, it can identify missing or incorrect accents and breathing marks, check the forms of each word, identify extraneous or missing words, and recognize when a word is valid Greek but does not belong in a particular sentence. Note that some edge cases are not being accounted for; for instance, if a word is both missing the correct accents and in the incorrect form, it is marked as invalid. Ideally, if this situation arises then the user should be alerted about both mistakes and the word should be marked as valid.
