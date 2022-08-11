@@ -27,6 +27,8 @@
 
 `GenerateVerbForms` uses Stanza to find the lemmas for a list of verbs, then uses James Tauber's [greek-inflexion repo](https://github.com/jtauber/greek-inflexion) to generate all the forms of those verbs. Detailed instructions for use can be found at the top of the notebook.
 
+`SaveToFile` is a brief experimentation with saving users' responses (and number of attempts, feedback, etc) to a csv file.
+
 
 
 ---
